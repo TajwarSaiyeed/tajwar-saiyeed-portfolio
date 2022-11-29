@@ -41,11 +41,10 @@ const Main = () => {
       {/* services */}
       <div className="mt-20">
         <h3 className="text-3xl dark:text-white md:text-4xl lg:text-5xl py-2">
-          Services i offer
+          Skill i have
         </h3>
         <p className="leading-6 py-5 text-gray-800 dark:text-gray-300 text-md">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          tempore quibusdam molestias magni.
+          I am
           <span className="text-teal-500">Responsive Website</span> quisquam
           suscipit, obcaecati quod eum sunt.
           <span className="text-cyan-600">Tailwind CSS</span> dolorum fugit eos
@@ -63,22 +62,26 @@ const Main = () => {
         <div className="text-center w-80 dark:bg-sky-100 mx-auto flex flex-col shadow-lg dark:shadow-sky-50 p-10 rounded-xl justify-center items-center">
           <img src={Card1} width={100} height={100} alt="" />
           <h3 className="text-lg font-medium pt-8 pb-2">Responsive Design</h3>
-          <h4 className="text-teal-500 py-4">Tools I use</h4>
+          <h4 className="text-teal-500 py-4">Tool i use</h4>
           <div className="text-gray-800 py-1">
-            <p>Laptop</p>
-            <p>Tablet</p>
-            <p>Mobile</p>
+            <p>Vanilla CSS</p>
+            <p>Bootstrap</p>
+            <p>Tailwind CSS</p>
+            <p>React Bootstrap</p>
+            <p>daisyUI</p>
+            <p>MUI</p>
           </div>
         </div>
         <div className="text-center w-80 dark:bg-sky-100 mx-auto flex flex-col shadow-lg dark:shadow-sky-50 p-10 rounded-xl justify-center items-center">
           <img src={Card2} width={100} height={100} alt="" />
-          <h3 className="text-lg font-medium pt-8 pb-2">Coding</h3>
+          <h3 className="text-lg font-medium pt-8 pb-2">Coding and Design</h3>
 
           <h4 className="text-teal-500 py-4">Tools I use</h4>
           <div className="text-gray-800 py-1">
-            <p>HTML</p>
+            <p>HTML for Markup</p>
             <p>CSS</p>
             <p>JavaScript</p>
+            <p>React</p>
           </div>
         </div>
         <div className="text-center w-80 dark:bg-sky-100 mx-auto flex flex-col shadow-lg dark:shadow-sky-50 p-10 rounded-xl justify-center items-center">
@@ -87,8 +90,8 @@ const Main = () => {
           <h4 className="text-teal-500 py-4">Tools I use</h4>
           <div className="text-gray-800 py-1">
             <p>NodeJS</p>
+            <p>Express JS</p>
             <p>MongoDB</p>
-            <p>Server</p>
           </div>
         </div>
       </div>
