@@ -4,7 +4,7 @@ const Nav = ({ darkMode, setDarkMode }) => {
   return (
     <nav className="flex items-center justify-between mb-12 py-10">
       <h1 className="text-xl font-bold uppercase  text-teal-600  dark:text-teal-400 font-md">
-        tajwar
+        tajwar saiyeed
       </h1>
       <ul className="flex justify-between items-center gap-5">
         <li>
