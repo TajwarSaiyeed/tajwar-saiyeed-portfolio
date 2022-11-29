@@ -214,18 +214,27 @@ const Main = () => {
             </div>
           </div>
         </div>
-
-        <div className="rounded-lg overflow-hidden shadow-md my-1">
-          <img src={Web1} alt="" className="h-full w-full" />
-        </div>
-        <div className="rounded-lg overflow-hidden shadow-md my-1">
-          <img src={Web4} alt="" className="h-full w-full" />
-        </div>
-        <div className="rounded-lg overflow-hidden shadow-md my-1">
-          <img src={Web5} alt="" className="h-full w-full" />
-        </div>
-        <div className="rounded-lg overflow-hidden shadow-md my-1">
-          <img src={Web6} alt="" className="h-full w-full" />
+        <div className="rounded-lg relative overflow-hidden shadow-md my-1">
+          <img src={Web5} alt="" className="object-fill w-full h-3/4" />
+          <div className="bg-slate-100 font-bold  flex flex-col items-center w-full h-full">
+            <h1 className="text-2xl drop-shadow-lg">Quizzy App</h1>
+            <div className="gap-2 flex">
+              <a
+                href="https://quizzy-app-abid.netlify.app/"
+                className="link text-md"
+                target={`_blank`}
+              >
+                Live Site
+              </a>
+              <a
+                href="https://github.com/TajwarSaiyeed/Quizzy-APP-Abid"
+                className="link text-md"
+                target={`_blank`}
+              >
+                Client Side
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
