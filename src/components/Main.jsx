@@ -106,26 +106,26 @@ const Main = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 py-10 shadow-sm p-2 rounded-lg gap-10 text-center">
         <div className="rounded-lg relative overflow-hidden shadow-md my-1">
-          <img src={Web1} alt="" className="object-fill w-full h-3/4" />
+          <img src={Web3} alt="" className="object-fill w-full h-3/4" />
           <div className="bg-slate-100 font-bold  flex flex-col items-center w-full h-full">
-            <h1 className="text-2xl drop-shadow-lg">TSA Academy</h1>
+            <h1 className="text-2xl drop-shadow-lg">Laptop Zone</h1>
             <div className="gap-2 flex">
               <a
-                href="https://tsa-academy-abid.web.app/"
-                className="link text-md"
+                href="https://laptop-zone.web.app/"
+                className="text-md"
                 target={`_blank`}
               >
                 Live Site
               </a>
               <a
-                href="https://github.com/TajwarSaiyeed/Client-TSA-Academy"
+                href="https://github.com/TajwarSaiyeed/laptop-zone"
                 className="link text-md"
                 target={`_blank`}
               >
                 Client Side
               </a>
               <a
-                href="https://github.com/TajwarSaiyeed/Server-TSA-Academy"
+                href="https://github.com/TajwarSaiyeed/laptop-zone-server"
                 className="link text-md"
                 target={`_blank`}
               >
@@ -163,9 +163,38 @@ const Main = () => {
             </div>
           </div>
         </div>
+        <div className="rounded-lg relative overflow-hidden shadow-md my-1">
+          <img src={Web1} alt="" className="object-fill w-full h-3/4" />
+          <div className="bg-slate-100 font-bold  flex flex-col items-center w-full h-full">
+            <h1 className="text-2xl drop-shadow-lg">TSA Academy</h1>
+            <div className="gap-2 flex">
+              <a
+                href="https://tsa-academy-abid.web.app/"
+                className="link text-md"
+                target={`_blank`}
+              >
+                Live Site
+              </a>
+              <a
+                href="https://github.com/TajwarSaiyeed/Client-TSA-Academy"
+                className="link text-md"
+                target={`_blank`}
+              >
+                Client Side
+              </a>
+              <a
+                href="https://github.com/TajwarSaiyeed/Server-TSA-Academy"
+                className="link text-md"
+                target={`_blank`}
+              >
+                Server Side
+              </a>
+            </div>
+          </div>
+        </div>
 
         <div className="rounded-lg overflow-hidden shadow-md my-1">
-          <img src={Web3} alt="" className="h-full w-full" />
+          <img src={Web1} alt="" className="h-full w-full" />
         </div>
         <div className="rounded-lg overflow-hidden shadow-md my-1">
           <img src={Web4} alt="" className="h-full w-full" />
