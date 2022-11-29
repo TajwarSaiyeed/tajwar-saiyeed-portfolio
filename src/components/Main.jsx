@@ -7,7 +7,7 @@ import Card1 from "../images/card1.png";
 import Card2 from "../images/card2.png";
 import Card3 from "../images/card3.png";
 import Web1 from "../images/web1.png";
-import Web2 from "../images/web2.jpg";
+import Web2 from "../images/web2.png";
 import Web3 from "../images/web3.png";
 import Web4 from "../images/web4.png";
 import Web5 from "../images/web5.png";
@@ -50,8 +50,8 @@ const Main = () => {
       </div>
 
       {/* card */}
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 my-10">
-        <div className="text-center w-80 dark:bg-sky-100 mx-auto flex flex-col shadow-lg dark:shadow-sky-50 p-10 rounded-xl justify-center items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-3 md:gap-10 my-10">
+        <div className="text-center lg:w-80 md:w-80 sm:w-96 w-96 dark:bg-sky-100 mx-auto flex flex-col shadow-lg dark:shadow-sky-50 p-10 rounded-xl justify-center items-center">
           <img src={Card1} width={100} height={100} alt="" />
           <h3 className="text-lg font-medium pt-8 pb-2">Responsive Design</h3>
           <h4 className="text-teal-500 py-4">Tool i use</h4>
@@ -64,7 +64,7 @@ const Main = () => {
             <p>MUI</p>
           </div>
         </div>
-        <div className="text-center w-80 dark:bg-sky-100 mx-auto flex flex-col shadow-lg dark:shadow-sky-50 p-10 rounded-xl justify-center items-center">
+        <div className="text-center lg:w-80 md:w-80 sm:w-96 w-96 dark:bg-sky-100 mx-auto flex flex-col shadow-lg dark:shadow-sky-50 p-10 rounded-xl justify-center items-center">
           <img src={Card2} width={100} height={100} alt="" />
           <h3 className="text-lg font-medium pt-8 pb-2">Coding and Design</h3>
 
@@ -76,7 +76,7 @@ const Main = () => {
             <p>React</p>
           </div>
         </div>
-        <div className="text-center w-80 dark:bg-sky-100 mx-auto flex flex-col shadow-lg dark:shadow-sky-50 p-10 rounded-xl justify-center items-center">
+        <div className="text-center lg:w-80 md:w-80 sm:w-96 w-96 dark:bg-sky-100 mx-auto flex flex-col shadow-lg dark:shadow-sky-50 p-10 rounded-xl justify-center items-center">
           <img src={Card3} width={100} height={100} alt="" />
           <h3 className="text-lg font-medium pt-8 pb-2">Server Upload</h3>
           <h4 className="text-teal-500 py-4">Tools I use</h4>
@@ -105,12 +105,65 @@ const Main = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 py-10 shadow-sm p-2 rounded-lg gap-10 text-center">
-        <div className="rounded-lg overflow-hidden shadow-md my-1">
-          <img src={Web1} alt="" className="h-full w-full" />
+        <div className="rounded-lg relative overflow-hidden shadow-md my-1">
+          <img src={Web1} alt="" className="object-fill w-full h-3/4" />
+          <div className="bg-slate-100 font-bold  flex flex-col items-center w-full h-full">
+            <h1 className="text-2xl drop-shadow-lg">TSA Academy</h1>
+            <div className="gap-2 flex">
+              <a
+                href="https://tsa-academy-abid.web.app/"
+                className="link text-md"
+                target={`_blank`}
+              >
+                Live Site
+              </a>
+              <a
+                href="https://github.com/TajwarSaiyeed/Client-TSA-Academy"
+                className="link text-md"
+                target={`_blank`}
+              >
+                Client Side
+              </a>
+              <a
+                href="https://github.com/TajwarSaiyeed/Server-TSA-Academy"
+                className="link text-md"
+                target={`_blank`}
+              >
+                Server Side
+              </a>
+            </div>
+          </div>
         </div>
-        <div className="rounded-lg overflow-hidden shadow-md my-1">
-          <img src={Web2} alt="" className="h-full w-full" />
+        <div className="rounded-lg relative overflow-hidden shadow-md my-1">
+          <img src={Web2} alt="" className="object-fill w-full h-3/4" />
+          <div className="bg-slate-100 font-bold  flex flex-col items-center w-full h-full">
+            <h1 className="text-2xl drop-shadow-lg">Abid Photograpy</h1>
+            <div className="gap-2 flex">
+              <a
+                href="https://abid-photography.web.app/"
+                className="link text-md"
+                target={`_blank`}
+              >
+                Live Site
+              </a>
+              <a
+                href="https://github.com/TajwarSaiyeed/abid-photography-client"
+                className="link text-md"
+                target={`_blank`}
+              >
+                Client Side
+              </a>
+              <a
+                href="https://github.com/TajwarSaiyeed/abid-photography-server"
+                className="link text-md"
+                target={`_blank`}
+              >
+                Server Side
+              </a>
+            </div>
+          </div>
         </div>
+
         <div className="rounded-lg overflow-hidden shadow-md my-1">
           <img src={Web3} alt="" className="h-full w-full" />
         </div>
