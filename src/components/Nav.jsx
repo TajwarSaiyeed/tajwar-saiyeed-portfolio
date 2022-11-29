@@ -15,10 +15,9 @@ const Nav = ({ darkMode, setDarkMode }) => {
         </li>
         <li>
           <a
-            href="https://resume-abid.netlify.app"
-            target={"_blank"}
+            href="https://drive.google.com/file/d/1ICg9Z_9AZ4xOidT1XwjGOHidJGg7ITL3/view?usp=sharing"
             className="bg-gradient-to-r from-cyan-500 to-teal-400 text-white px-4 py-2 rounded-md border-none outline-none"
-            rel="noreferrer"
+            target={`_blank`}
           >
             Resume
           </a>

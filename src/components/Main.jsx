@@ -1,9 +1,6 @@
 import React from "react";
-import {
-  AiFillTwitterCircle,
-  AiFillYoutube,
-  AiFillLinkedin,
-} from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
+import { FaGithub, FaFacebook } from "react-icons/fa";
 
 import Me from "../images/me.png";
 import Card1 from "../images/card1.png";
@@ -24,23 +21,18 @@ const Main = () => {
           Tajwar Saiyeed
         </h2>
         <h3 className="text-xl text-dark dark:text-white md:text-3xl lg:text-4xl py-2">
-          MERN Stack Developer
+          Junior Web Developer
         </h3>
-        <p className="text-md md:text-2xl max-w-xl mx-auto py-5 leading-6 text-gray-800 dark:text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi non
-          quae dolores maiores esse unde. Nihil, nulla. Blanditiis, placeat
-          explicabo!
-        </p>
       </div>
       <div className="flex justify-center text-5xl gap-4 py-2">
         <a href="/">
-          <AiFillTwitterCircle className="text-cyan-600 dark:text-cyan-400" />
+          <FaGithub className=" dark:text-gray-400" />
         </a>
         <a href="/">
           <AiFillLinkedin className="text-blue-700 dark:text-blue-500" />
         </a>
         <a href="/">
-          <AiFillYoutube className="text-red-500 dark:text-red-700" />
+          <FaFacebook className="text-blue-500 dark:text-blue-700" />
         </a>
       </div>
       <div className="relative mt-20 items-center mx-auto bg-gradient-to-b from-teal-500 dark:from-sky-200 rounded-full w-80 h-80 lg:w-96 lg:h-96 overflow-hidden">
@@ -68,14 +60,9 @@ const Main = () => {
 
       {/* card */}
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 my-10">
-        <div className="text-center dark:bg-sky-100 mx-auto flex flex-col shadow-lg dark:shadow-sky-50 p-10 rounded-xl justify-center items-center">
+        <div className="text-center w-80 dark:bg-sky-100 mx-auto flex flex-col shadow-lg dark:shadow-sky-50 p-10 rounded-xl justify-center items-center">
           <img src={Card1} width={100} height={100} alt="" />
           <h3 className="text-lg font-medium pt-8 pb-2">Responsive Design</h3>
-          <p className="py-2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut eaque
-            illo facilis non magnam, earum obcaecati vitae dolor saepe
-            explicabo.
-          </p>
           <h4 className="text-teal-500 py-4">Tools I use</h4>
           <div className="text-gray-800 py-1">
             <p>Laptop</p>
@@ -83,14 +70,10 @@ const Main = () => {
             <p>Mobile</p>
           </div>
         </div>
-        <div className="text-center dark:bg-sky-100 mx-auto flex flex-col shadow-lg dark:shadow-sky-50 p-10 rounded-xl justify-center items-center">
+        <div className="text-center w-80 dark:bg-sky-100 mx-auto flex flex-col shadow-lg dark:shadow-sky-50 p-10 rounded-xl justify-center items-center">
           <img src={Card2} width={100} height={100} alt="" />
           <h3 className="text-lg font-medium pt-8 pb-2">Coding</h3>
-          <p className="py-2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut eaque
-            illo facilis non magnam, earum obcaecati vitae dolor saepe
-            explicabo.
-          </p>
+
           <h4 className="text-teal-500 py-4">Tools I use</h4>
           <div className="text-gray-800 py-1">
             <p>HTML</p>
@@ -98,14 +81,9 @@ const Main = () => {
             <p>JavaScript</p>
           </div>
         </div>
-        <div className="text-center dark:bg-sky-100 mx-auto flex flex-col shadow-lg dark:shadow-sky-50 p-10 rounded-xl justify-center items-center">
+        <div className="text-center w-80 dark:bg-sky-100 mx-auto flex flex-col shadow-lg dark:shadow-sky-50 p-10 rounded-xl justify-center items-center">
           <img src={Card3} width={100} height={100} alt="" />
           <h3 className="text-lg font-medium pt-8 pb-2">Server Upload</h3>
-          <p className="py-2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut eaque
-            illo facilis non magnam, earum obcaecati vitae dolor saepe
-            explicabo.
-          </p>
           <h4 className="text-teal-500 py-4">Tools I use</h4>
           <div className="text-gray-800 py-1">
             <p>NodeJS</p>
@@ -117,11 +95,9 @@ const Main = () => {
       {/* Portfolio */}
       <div className="mt-20">
         <h3 className="text-3xl dark:text-white md:text-4xl lg:text-5xl py-2">
-          Portfolio
+          Projects
         </h3>
         <p className="leading-6 py-5 text-gray-800 dark:text-gray-200 text-md">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          tempore quibusdam molestias magni{" "}
           <span className="text-teal-500">Responsive Website</span> quisquam
           suscipit, obcaecati quod eum sunt{" "}
           <span className="text-cyan-600">Tailwind CSS</span> dolorum fugit eos
