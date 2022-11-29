@@ -12,6 +12,7 @@ import Web3 from "../images/web3.png";
 import Web4 from "../images/web4.png";
 import Web5 from "../images/web5.png";
 import Web6 from "../images/web6.png";
+import Web7 from "../images/web7.png";
 
 const Main = () => {
   return (
@@ -250,6 +251,28 @@ const Main = () => {
               </a>
               <a
                 href="https://github.com/TajwarSaiyeed/Speed-Master-Debug"
+                className="link text-md"
+                target={`_blank`}
+              >
+                Client Side
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="rounded-lg relative overflow-hidden shadow-md my-1">
+          <img src={Web7} alt="" className="object-fill w-full h-3/4" />
+          <div className="bg-slate-100 font-bold  flex flex-col items-center w-full h-full">
+            <h1 className="text-2xl drop-shadow-lg">THE DAILY NEWS</h1>
+            <div className="gap-2 flex">
+              <a
+                href="https://abid-the-daily-news.netlify.app/"
+                className="link text-md"
+                target={`_blank`}
+              >
+                Live Site
+              </a>
+              <a
+                href="https://github.com/TajwarSaiyeed/News-Portal"
                 className="link text-md"
                 target={`_blank`}
               >
