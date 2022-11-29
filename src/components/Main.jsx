@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillLinkedin } from "react-icons/ai";
 import { FaGithub, FaFacebook } from "react-icons/fa";
 
-import Me from "../images/me.png";
+import Me from "../images/me.jpg";
 import Card1 from "../images/card1.png";
 import Card2 from "../images/card2.png";
 import Card3 from "../images/card3.png";
@@ -35,26 +35,18 @@ const Main = () => {
           <FaFacebook className="text-blue-500 dark:text-blue-700" />
         </a>
       </div>
-      <div className="relative mt-20 items-center mx-auto bg-gradient-to-b from-teal-500 dark:from-sky-200 rounded-full w-80 h-80 lg:w-96 lg:h-96 overflow-hidden">
-        <img src={Me} className="object-cover w-full h-full" alt="" />
+      <div className="relative mt-20 items-center mx-auto bg-gradient-to-b from-teal-500 dark:from-sky-200 rounded-full w-80 h-80 p-2 lg:w-96 lg:h-96 overflow-hidden">
+        <img
+          src={Me}
+          className="object-cover rounded-full h-full w-full"
+          alt=""
+        />
       </div>
       {/* services */}
       <div className="mt-20">
         <h3 className="text-3xl dark:text-white md:text-4xl lg:text-5xl py-2">
           Skill i have
         </h3>
-        <p className="leading-6 py-5 text-gray-800 dark:text-gray-300 text-md">
-          I am
-          <span className="text-teal-500">Responsive Website</span> quisquam
-          suscipit, obcaecati quod eum sunt.
-          <span className="text-cyan-600">Tailwind CSS</span> dolorum fugit eos
-          officiis soluta, impedit, possimus velit! Sapiente, dolores
-          praesentium.
-        </p>
-        <p className="leading-6 py-5 text-gray-800 dark:text-gray-300 text-md">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quam a
-          animi distinctio natus quas.
-        </p>
       </div>
 
       {/* card */}
