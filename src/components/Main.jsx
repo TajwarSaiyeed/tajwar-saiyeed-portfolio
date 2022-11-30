@@ -263,19 +263,36 @@ const Main = () => {
       </div>
       <div className="mt-20">
         <h3 className="text-3xl dark:text-white md:text-4xl lg:text-5xl py-2">
-          Contact Me
+          Reach Me
         </h3>
       </div>
-      <div className="flex justify-center text-5xl gap-4 py-2 my-20">
-        <a href="/" className="flex items-center justify-center gap-2">
-          <FaGithub className=" dark:text-gray-400" /> Github
+      <div className="grid grid-cols-1 sm:grid-rows-1 md:grid-cols-3 lg:grid-rows-3 text-5xl gap-4 py-2 pb-5">
+        <a
+          href="/"
+          className="flex lg:max-w-80 md:max-w-72 items-center justify-center gap-2 border border-black p-2 rounded-md hover:bg-slate-100"
+        >
+          <FaGithub fontSize={30} className="dark:text-gray-400" />
+          <p className="text-xl dark:text-white">Github</p>
         </a>
-        <a href="/" className="flex items-center justify-center gap-2">
-          <AiFillLinkedin className="text-blue-700 dark:text-blue-500" />{" "}
-          Linkedin
+        <a
+          href="/"
+          className="flex lg:max-w-80 md:max-w-72 items-center justify-center gap-2  border border-black p-2 rounded-md hover:bg-slate-100"
+        >
+          <AiFillLinkedin
+            fontSize={30}
+            className="text-blue-700 dark:text-blue-500"
+          />
+          <p className="text-xl dark:text-white">Linkedin</p>
         </a>
-        <a href="/" className="flex items-center justify-center gap-2">
-          <FaFacebook className="text-blue-500 dark:text-blue-700" /> Facebook
+        <a
+          href="/"
+          className="flex lg:max-w-80 md:max-w-72 items-center justify-center gap-2  border border-black p-2 rounded-md hover:bg-slate-100"
+        >
+          <FaFacebook
+            fontSize={30}
+            className="text-blue-500 dark:text-blue-700"
+          />
+          <p className="text-xl dark:text-white">Facebook</p>
         </a>
       </div>
     </div>
