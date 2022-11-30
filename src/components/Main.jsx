@@ -93,17 +93,6 @@ const Main = () => {
         <h3 className="text-3xl dark:text-white md:text-4xl lg:text-5xl py-2">
           Projects
         </h3>
-        <p className="leading-6 py-5 text-gray-800 dark:text-gray-200 text-md">
-          <span className="text-teal-500">Responsive Website</span> quisquam
-          suscipit, obcaecati quod eum sunt{" "}
-          <span className="text-cyan-600">Tailwind CSS</span> dolorum fugit eos
-          officiis soluta, impedit, possimus velit! Sapiente, dolores
-          praesentium.
-        </p>
-        <p className="leading-6 py-5 text-gray-800 text-md">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quam a
-          animi distinctio natus quas.
-        </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 py-10 shadow-sm p-2 rounded-lg gap-10 text-center">
         <div className="rounded-lg relative overflow-hidden shadow-md my-1">
