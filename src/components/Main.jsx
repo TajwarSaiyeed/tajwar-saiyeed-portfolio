@@ -268,14 +268,14 @@ const Main = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-rows-1 md:grid-cols-3 lg:grid-rows-3 text-5xl gap-4 py-2 pb-5">
         <a
-          href="/"
+          href="https://github.com/TajwarSaiyeed"
           className="flex lg:max-w-80 md:max-w-72 items-center justify-center gap-2 border border-black p-2 rounded-md hover:bg-slate-100"
         >
           <FaGithub fontSize={30} className="dark:text-gray-400" />
           <p className="text-xl dark:text-white">Github</p>
         </a>
         <a
-          href="/"
+          href="https://www.linkedin.com/in/tajwarsaiyeedabid/"
           className="flex lg:max-w-80 md:max-w-72 items-center justify-center gap-2  border border-black p-2 rounded-md hover:bg-slate-100"
         >
           <AiFillLinkedin
@@ -285,7 +285,7 @@ const Main = () => {
           <p className="text-xl dark:text-white">Linkedin</p>
         </a>
         <a
-          href="/"
+          href="https://web.facebook.com/TajwarSaiyeed/"
           className="flex lg:max-w-80 md:max-w-72 items-center justify-center gap-2  border border-black p-2 rounded-md hover:bg-slate-100"
         >
           <FaFacebook
