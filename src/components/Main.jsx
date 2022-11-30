@@ -25,17 +25,7 @@ const Main = () => {
           Junior Web Developer
         </h3>
       </div>
-      <div className="flex justify-center text-5xl gap-4 py-2">
-        <a href="/">
-          <FaGithub className=" dark:text-gray-400" />
-        </a>
-        <a href="/">
-          <AiFillLinkedin className="text-blue-700 dark:text-blue-500" />
-        </a>
-        <a href="/">
-          <FaFacebook className="text-blue-500 dark:text-blue-700" />
-        </a>
-      </div>
+
       <div className="relative mt-20 items-center mx-auto bg-gradient-to-b from-teal-500 dark:from-sky-200 rounded-full w-80 h-80 p-2 lg:w-96 lg:h-96 overflow-hidden">
         <img
           src={Me}
@@ -270,6 +260,23 @@ const Main = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mt-20">
+        <h3 className="text-3xl dark:text-white md:text-4xl lg:text-5xl py-2">
+          Contact Me
+        </h3>
+      </div>
+      <div className="flex justify-center text-5xl gap-4 py-2 my-20">
+        <a href="/" className="flex items-center justify-center gap-2">
+          <FaGithub className=" dark:text-gray-400" /> Github
+        </a>
+        <a href="/" className="flex items-center justify-center gap-2">
+          <AiFillLinkedin className="text-blue-700 dark:text-blue-500" />{" "}
+          Linkedin
+        </a>
+        <a href="/" className="flex items-center justify-center gap-2">
+          <FaFacebook className="text-blue-500 dark:text-blue-700" /> Facebook
+        </a>
       </div>
     </div>
   );
