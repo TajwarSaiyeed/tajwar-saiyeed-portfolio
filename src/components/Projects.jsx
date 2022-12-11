@@ -12,6 +12,9 @@ const Projects = () => {
   const projects = [
     {
       _id: 1,
+      live: "https://laptop-zone.web.app/",
+      client: "https://github.com/TajwarSaiyeed/laptop-zone",
+      server: "https://github.com/TajwarSaiyeed/laptop-zone-server",
       title: "Laptop Zone",
       image: "https://i.ibb.co/wd13K5h/Untitled-design-removebg-preview.png",
       summary:
@@ -50,6 +53,9 @@ const Projects = () => {
     {
       _id: 2,
       title: "Photography",
+      live: "https://abid-photography.web.app/",
+      client: "https://github.com/TajwarSaiyeed/abid-photography-client",
+      server: "https://github.com/TajwarSaiyeed/abid-photography-server",
       image: "https://i.ibb.co/bPCjn7G/Untitled-design-1-removebg-preview.png",
       summary:
         "Photography app that hast login logout system. Map leaflet. By using this map you can reach me. Users can upload photos. Directly send a message to the admin. Only Authorized users can post reviews.",
@@ -87,6 +93,9 @@ const Projects = () => {
     {
       _id: 3,
       title: "TSA Academy",
+      live: "https://tsa-academy-abid.web.app/",
+      client: "https://github.com/TajwarSaiyeed/Client-TSA-Academy",
+      server: "https://github.com/TajwarSaiyeed/Server-TSA-Academy",
       image: "https://i.ibb.co/Ptz38kQ/Untitled-design-2-removebg-preview.png",
       summary:
         "Educational App where students can enroll in courses. Firebase Login system. Imgbb for saving the Image. Save course data in pdf.",
@@ -171,6 +180,25 @@ const Projects = () => {
               <p className="text-md text-center text-teal-900 dark:text-white md:text-xl md:text-left">
                 {project?.summary}
               </p>
+              <div className="flex justify-center items-center gap-1 md:gap-5">
+                <a href={project?.live} target={`_blank`}>
+                  <button className="border border-[#242424] text-gray-500 font-bold py- md:py-2 px-1 md:px-6 rounded-full text-xs uppercase tracking-widest transition-all hover:border-teal-500/40 hover:text-teal-500/40">
+                    Live Site
+                  </button>
+                </a>
+                <a href={project?.client} target={`_blank`}>
+                  <button className="border border-[#242424] text-gray-500 font-bold py- md:py-2 px-1 md:px-6 rounded-full text-xs uppercase tracking-widest transition-all hover:border-teal-500/40 hover:text-teal-500/40">
+                    Client Side
+                  </button>
+                </a>
+                {project?.server && (
+                  <a href={project?.server} target={`_blank`}>
+                    <button className="border border-[#242424] text-gray-500 font-bold py- md:py-2 px-1 md:px-6 rounded-full text-xs uppercase tracking-widest transition-all hover:border-teal-500/40 hover:text-teal-500/40">
+                      Server Side
+                    </button>
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         ))}
