@@ -5,7 +5,7 @@ import { SocialIcon } from "react-social-icons";
 
 const Nav = ({ darkMode, setDarkMode }) => {
   return (
-    <nav className="flex items-center justify-between mb-12 py-10">
+    <nav className="flex items-center justify-between  py-10">
       <motion.div
         initial={{
           x: -500,

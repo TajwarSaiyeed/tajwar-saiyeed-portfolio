@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <motion.div
-      id="about"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
@@ -23,12 +22,12 @@ const About = () => {
       />
 
       <div className="space-y-10 px-0 mt-0 md:mt-36 md:px-10">
-        <h4 className="text-4xl font-semibold dark:text-slate-300">
+        <h4 className="text-4xl text-black font-semibold dark:text-slate-300">
           Here is a{" "}
           <span className="underline decoration-teal-500/50">little</span>{" "}
           background
         </h4>
-        <p className="text-base dark:text-slate-100">
+        <p className="text-black dark:text-slate-100">
           I'm Tajwar Saiyeed. I've been coding for over 1 years now. I'm a MERN
           Stack Developer. In 2021, I have complete Intermediate of Science from
           Gachhbaria Gov't Collage. I am self-motivated, quick learner,

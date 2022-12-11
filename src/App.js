@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className={darkMode ? "dark" : `bg-slate-200`}>
-      <div className="dark:bg-slate-800 min-h-screen px-5 sm:px-10 md:px-32">
+      <div className="dark:bg-slate-800 min-h-screen px-5 sm:px-10 md:px-32 overflow-hidden">
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         <Main />
       </div>
