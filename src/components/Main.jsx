@@ -1,11 +1,5 @@
 import React from "react";
-import { AiFillLinkedin } from "react-icons/ai";
-import { FaGithub, FaFacebook } from "react-icons/fa";
-
 import Me from "../images/me.jpg";
-import Card1 from "../images/card1.png";
-import Card2 from "../images/card2.png";
-import Card3 from "../images/card3.png";
 import Web1 from "../images/web1.png";
 import Web2 from "../images/web2.png";
 import Web3 from "../images/web3.png";
@@ -13,6 +7,23 @@ import Web4 from "../images/web4.png";
 import Web5 from "../images/web5.png";
 import Web6 from "../images/web6.png";
 import Web7 from "../images/web7.png";
+import ContactMe from "./ContactMe";
+import Skill from "./Skill";
+import html from "../images/img/html.png";
+import css from "../images/img/css3.png";
+import bootstrap from "../images/img/bootstrap.png";
+import tailwind from "../images/img/tailwindCss.png";
+import git from "../images/img/git.png";
+import javascript from "../images/img/javascript.png";
+import firebase from "../images/img/firebase.png";
+import reactMe from "../images/img/react-js.png";
+import next from "../images/img/next.png";
+import nodejs from "../images/img/nodejs.png";
+import express from "../images/img/express.png";
+import redux from "../images/img/redux.png";
+import typescript from "../images/img/typescript.png";
+import mongodb from "../images/img/mongodb.png";
+import materialui from "../images/img/material-ui.png";
 
 const Main = () => {
   return (
@@ -22,7 +33,7 @@ const Main = () => {
           Tajwar Saiyeed
         </h2>
         <h3 className="text-xl text-dark dark:text-white md:text-3xl lg:text-4xl py-2">
-          Junior Web Developer
+          MERN Stack Developer
         </h3>
       </div>
 
@@ -35,49 +46,30 @@ const Main = () => {
       </div>
       {/* services */}
       <div className="mt-20">
-        <h3 className="text-3xl dark:text-white md:text-4xl lg:text-5xl py-2">
+        <h3 className="text-3xl mb-12 text-center dark:text-white md:text-4xl lg:text-5xl py-2">
           Skill i have
         </h3>
+        <div className="grid grid-cols-3 lg:grid-cols-4 gap-2 justify-items-center align-middle">
+          <Skill directionLeft={true} percent={86} imgMe={html} />
+          <Skill directionLeft={true} percent={80} imgMe={css} />
+          <Skill directionLeft={true} percent={82} imgMe={bootstrap} />
+          <Skill directionLeft={true} percent={78} imgMe={tailwind} />
+          <Skill directionLeft={true} percent={56} imgMe={git} />
+          <Skill directionLeft={true} percent={60} imgMe={javascript} />
+          <Skill directionLeft={true} percent={39} imgMe={firebase} />
+          <Skill directionLeft={true} percent={62} imgMe={reactMe} />
+          <Skill directionLeft={false} percent={12} imgMe={next} />
+          <Skill directionLeft={false} percent={47} imgMe={nodejs} />
+          <Skill directionLeft={false} percent={34} imgMe={express} />
+          <Skill directionLeft={false} percent={16} imgMe={redux} />
+          <Skill directionLeft={false} percent={10} imgMe={typescript} />
+          <Skill directionLeft={false} percent={42} imgMe={mongodb} />
+          <Skill directionLeft={false} percent={20} imgMe={materialui} />
+        </div>
       </div>
 
       {/* card */}
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-3 md:gap-10 my-10">
-        <div className="text-center lg:w-80 md:w-80 sm:w-96 w-96 dark:bg-sky-100 mx-auto flex flex-col shadow-lg dark:shadow-sky-50 p-10 rounded-xl justify-center items-center">
-          <img src={Card1} width={100} height={100} alt="" />
-          <h3 className="text-lg font-medium pt-8 pb-2">Responsive Design</h3>
-          <h4 className="text-teal-500 py-4">Tool i use</h4>
-          <div className="text-gray-800 py-1">
-            <p>Vanilla CSS</p>
-            <p>Bootstrap</p>
-            <p>Tailwind CSS</p>
-            <p>React Bootstrap</p>
-            <p>daisyUI</p>
-            <p>MUI</p>
-          </div>
-        </div>
-        <div className="text-center lg:w-80 md:w-80 sm:w-96 w-96 dark:bg-sky-100 mx-auto flex flex-col shadow-lg dark:shadow-sky-50 p-10 rounded-xl justify-center items-center">
-          <img src={Card2} width={100} height={100} alt="" />
-          <h3 className="text-lg font-medium pt-8 pb-2">Coding and Design</h3>
 
-          <h4 className="text-teal-500 py-4">Tools I use</h4>
-          <div className="text-gray-800 py-1">
-            <p>HTML for Markup</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>React</p>
-          </div>
-        </div>
-        <div className="text-center lg:w-80 md:w-80 sm:w-96 w-96 dark:bg-sky-100 mx-auto flex flex-col shadow-lg dark:shadow-sky-50 p-10 rounded-xl justify-center items-center">
-          <img src={Card3} width={100} height={100} alt="" />
-          <h3 className="text-lg font-medium pt-8 pb-2">Server Upload</h3>
-          <h4 className="text-teal-500 py-4">Tools I use</h4>
-          <div className="text-gray-800 py-1">
-            <p>NodeJS</p>
-            <p>Express JS</p>
-            <p>MongoDB</p>
-          </div>
-        </div>
-      </div>
       {/* Portfolio */}
       <div className="mt-20">
         <h3 className="text-3xl dark:text-white md:text-4xl lg:text-5xl py-2">
@@ -261,39 +253,11 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div className="mt-20">
-        <h3 className="text-3xl dark:text-white md:text-4xl lg:text-5xl py-2">
+      <div className="mt-10">
+        <h3 className="tracking-[20px] uppercase text-center  dark:text-white md:text-4xl lg:text-5xl">
           Reach Me
         </h3>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-rows-1 md:grid-cols-3 lg:grid-rows-3 text-5xl gap-4 py-2 pb-5">
-        <a
-          href="https://github.com/TajwarSaiyeed"
-          className="flex lg:max-w-80 md:max-w-72 items-center justify-center gap-2 border border-black p-2 rounded-md hover:bg-slate-100"
-        >
-          <FaGithub fontSize={30} className="dark:text-gray-400" />
-          <p className="text-xl dark:text-white">Github</p>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/tajwarsaiyeedabid/"
-          className="flex lg:max-w-80 md:max-w-72 items-center justify-center gap-2  border border-black p-2 rounded-md hover:bg-slate-100"
-        >
-          <AiFillLinkedin
-            fontSize={30}
-            className="text-blue-700 dark:text-blue-500"
-          />
-          <p className="text-xl dark:text-white">Linkedin</p>
-        </a>
-        <a
-          href="https://web.facebook.com/TajwarSaiyeed/"
-          className="flex lg:max-w-80 md:max-w-72 items-center justify-center gap-2  border border-black p-2 rounded-md hover:bg-slate-100"
-        >
-          <FaFacebook
-            fontSize={30}
-            className="text-blue-500 dark:text-blue-700"
-          />
-          <p className="text-xl dark:text-white">Facebook</p>
-        </a>
+        <ContactMe />
       </div>
     </div>
   );
