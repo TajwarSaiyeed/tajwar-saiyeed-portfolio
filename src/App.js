@@ -7,8 +7,8 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div className={darkMode ? "dark" : ``}>
-      <div className="dark:bg-slate-800 min-h-screen px-10 sm:px-20 md:px-32">
+    <div className={darkMode ? "dark" : `bg-slate-200`}>
+      <div className="dark:bg-slate-800 min-h-screen px-5 sm:px-10 md:px-32">
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         <Main />
       </div>

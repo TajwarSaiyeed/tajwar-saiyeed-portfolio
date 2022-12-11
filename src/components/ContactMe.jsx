@@ -34,35 +34,35 @@ export default function ContactMe() {
       <div className="relative md:top-20 space-y-5 flex flex-col">
         <h4 className="md:text-4xl font-bold text-center uppercase dark:text-white">
           I have got just what you need.{" "}
-          <span className="underline decoration-[#F7AB0A]/50">Let's Talk</span>
+          <span className="underline decoration-teal-500/50">Let's Talk</span>
         </h4>
         <div className="md:space-y-2 ">
-          <div className="flex items-center space-x-5 md:justify-center">
-            <PhoneIcon className="h-4 w-4 md:h-7 md:w-7 text-[#F7AB0A]/50 animate-pulse" />
-            <p className="md:text-2xl dark:text-white">+012345647897</p>
+          <div className="flex items-center space-x-5 justify-end">
+            <p className="md:text-2xl dark:text-white">+8801853600515</p>
+            <PhoneIcon className="h-4 w-4 md:h-7 md:w-7 text-teal-500/80 animate-pulse" />
           </div>
-          <div className="flex items-center space-x-5 md:justify-center">
-            <EnvelopeIcon className="h-4 w-4 md:h-7 md:w-7 text-[#F7AB0A]/50 animate-pulse" />
+          <div className="flex items-center space-x-5 justify-end">
             <p className="md:text-2xl dark:text-white">
               tajwarsaiyeed15@gmail.com
             </p>
+            <EnvelopeIcon className="h-4 w-4 md:h-7 md:w-7 text-teal-500/80 animate-pulse" />
           </div>
-          <div className="flex items-center space-x-5 md:justify-center">
-            <MapPinIcon className="h-4 w-4 md:h-7 md:w-7 text-[#F7AB0A]/50 animate-pulse" />
+          <div className="flex items-center space-x-5 justify-end">
             <p className="md:text-2xl dark:text-white">
-              4397 padua, Chittagong, Bangladesh
+              Chittagong, Bangladesh
             </p>
+            <MapPinIcon className="h-4 w-4 md:h-7 md:w-7 text-teal-500/80 animate-pulse" />
           </div>
         </div>
         <form
           onSubmit={sendEmail}
-          className="flex flex-col h-96 p-2 mx-auto gap-2"
+          className="flex flex-col w-full h-96 p-2 mx-auto gap-2"
         >
           <div className="flex space-x-2">
             <input
               name="user_name"
               placeholder="Name"
-              className="w-full outline-none bg-slate-400/10 rounded-md border-b px-4 py-4 md:py-6 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#F7AB0A]/40 focus:text-[#F7AB0A]/40 hover:border-[#F7AB0A]/40"
+              className="w-full outline-none bg-slate-400/10 rounded-md border-b px-4 py-4 md:py-6 border-[#242424] text-gray-500 placeholder-gray-500 font-semibold transition-all focus:border-teal-500/80 focus:text-teal-500/80 hover:border-teal-500/80"
               type="text"
               required
             />
@@ -70,7 +70,7 @@ export default function ContactMe() {
               name="user_email"
               data-temp-mail-org
               placeholder="Email"
-              className="w-full outline-none bg-slate-400/10 rounded-md border-b px-4 py-4 md:py-6 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#F7AB0A]/40 focus:text-[#F7AB0A]/40 hover:border-[#F7AB0A]/40"
+              className="w-full outline-none bg-slate-400/10 rounded-md border-b px-4 py-4 md:py-6 border-[#242424] text-gray-500 placeholder-gray-500 font-semibold transition-all focus:border-teal-500/80 focus:text-teal-500/80 hover:border-teal-500/80"
               type="email"
               required
             />
@@ -78,19 +78,19 @@ export default function ContactMe() {
           <input
             name="subject"
             placeholder="Subject"
-            className="w-full outline-none bg-slate-400/10 rounded-md border-b px-4 py-4 md:py-6 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#F7AB0A]/40 focus:text-[#F7AB0A]/40 hover:border-[#F7AB0A]/40"
+            className="w-full outline-none bg-slate-400/10 rounded-md border-b px-4 py-4 md:py-6 border-[#242424] text-gray-500 placeholder-gray-500 font-semibold transition-all focus:border-teal-500/80 focus:text-teal-500/80 hover:border-teal-500/80"
             type="text"
             required
           />
           <textarea
             name="message"
             placeholder="Message"
-            className="w-full outline-none bg-slate-400/10 rounded-md border-b px-4 py-4 md:py-6 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#F7AB0A]/40 focus:text-[#F7AB0A]/40 hover:border-[#F7AB0A]/40"
+            className="w-full outline-none bg-slate-400/10 rounded-md border-b px-4 py-4 md:py-6 border-[#242424] text-gray-500 placeholder-gray-500 font-semibold transition-all focus:border-teal-500/80 focus:text-teal-500/80 hover:border-teal-500/80"
             required
           />
           <button
             type="submit"
-            className="bg-[#F7AB0A] py-5 px-10 text-black rounded-md font-bold text-lg"
+            className="bg-teal-500/80 py-5 px-10 hover:text-white text-black rounded-md font-bold text-lg"
           >
             Submit
           </button>

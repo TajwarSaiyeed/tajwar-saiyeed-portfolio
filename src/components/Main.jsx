@@ -1,5 +1,4 @@
 import React from "react";
-import Me from "../images/me.jpg";
 import Web1 from "../images/web1.png";
 import Web2 from "../images/web2.png";
 import Web3 from "../images/web3.png";
@@ -24,32 +23,20 @@ import redux from "../images/img/redux.png";
 import typescript from "../images/img/typescript.png";
 import mongodb from "../images/img/mongodb.png";
 import materialui from "../images/img/material-ui.png";
+import Hero from "./Hero";
+import About from "./About";
 
 const Main = () => {
   return (
-    <div>
-      <div className="p-10 text-center">
-        <h2 className="text-5xl md:text-6xl lg:text-8xl py-2 text-teal-600 dark:text-teal-400 font-medium">
-          Tajwar Saiyeed
-        </h2>
-        <h3 className="text-xl text-dark dark:text-white md:text-3xl lg:text-4xl py-2">
-          MERN Stack Developer
-        </h3>
-      </div>
-
-      <div className="relative mt-20 items-center mx-auto bg-gradient-to-b from-teal-500 dark:from-sky-200 rounded-full w-80 h-80 p-2 lg:w-96 lg:h-96 overflow-hidden">
-        <img
-          src={Me}
-          className="object-cover rounded-full h-full w-full"
-          alt=""
-        />
-      </div>
+    <div className="overflow-x-hidden">
+      <Hero />
+      <About />
       {/* services */}
-      <div className="mt-20">
-        <h3 className="text-3xl mb-12 text-center dark:text-white md:text-4xl lg:text-5xl py-2">
+      <div className="relative mt-20" id="skills">
+        <h3 className="text-center md:text-4xl uppercase tracking-[20px] text-gray-500 text-2xl mb-20">
           Skill i have
         </h3>
-        <div className="grid grid-cols-3 lg:grid-cols-4 gap-2 justify-items-center align-middle">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 justify-items-center align-middle">
           <Skill directionLeft={true} percent={86} imgMe={html} />
           <Skill directionLeft={true} percent={80} imgMe={css} />
           <Skill directionLeft={true} percent={82} imgMe={bootstrap} />
@@ -71,8 +58,8 @@ const Main = () => {
       {/* card */}
 
       {/* Portfolio */}
-      <div className="mt-20">
-        <h3 className="text-3xl dark:text-white md:text-4xl lg:text-5xl py-2">
+      <div id="projects" className="mt-20">
+        <h3 className="text-center md:text-4xl uppercase tracking-[20px] text-gray-500 text-2xl mb-20">
           Projects
         </h3>
       </div>
@@ -253,7 +240,7 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div className="mt-10">
+      <div id="contact" className="mt-10">
         <h3 className="tracking-[20px] uppercase text-center  dark:text-white md:text-4xl lg:text-5xl">
           Reach Me
         </h3>
